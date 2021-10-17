@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Figuras Geometricas</title>
+</head>
+<body>
+    <header>
+    <h1>Calculadora de figuras Geometricas</h1>
+    <p>Calculadora desarrollada en el Curso Practico De js en Platzi</p>
+    </header>
+<section class="contenedor_principal">
+    <section>
+        <img src="https://img.icons8.com/material-outlined/90/ffffff/rounded-square.png" alt="">
+        <form action="">
+            <label for="inputcuadrado">
+                Escribe Cuanto mide Cada Lado de tu cuadrado
+            </label>
+            <input id="inputcuadrado" type="number">
+            <button type="button" onclick="calcularperimetrocuadrado()">
+                Calcular Perimetro
+            </button>
+            <button type="button" onclick="calcularareacuadrado()">
+                Calcular area
+            </button>
+        </form>
+    </section>
+    
+    <section>
+        <img src="https://img.icons8.com/dotty/90/ffffff/three-triangles.png" alt="">
+        <form>
+            <label for="inputladot1">
+                Ingresa el lado 1
+            </label>
+            <input id="inputladot1" type="number">
+            <label for="inputladot2">
+                ingresa el lado 2
+            </label>
+            <input id="inputladot2" type="number">
+            <label for="inputbaset">
+                 ingresa la base del triangulo
+            </label>
+            <input id="inputbaset" type="number">
+            <label for="inputalturat">
+                 ingresa la altura del triangulo
+            </label>
+            <input id="inputalturat" type="number">
+            <button type="button" onclick="calcularareatriangulo()">
+                Calcular area
+            </button>
+            <button type="button" onclick="calculaperimetrotriangulo()">
+                Calcular Perimetro
+            </button>
+            
+        </form>
+    </section>
+    
+    <section>
+        <img src="https://img.icons8.com/ios-glyphs/90/ffffff/360-degrees.png" alt="">
+        <form>
+            <label for="inputradioc">
+                ingresa el radio del circulo
+            </label>
+            <input id="inputradioc" type="number">
+                
+            <button type="button" onclick="calcularareacirculo()">
+                Calcular area del circulo
+            </button>
+            <button type="button" onclick="calcularperimetrocirculo()">
+                Calcular Perimetro del circulo
+            </button>
+            <button type="button" onclick="calculardiametrocirculo()">
+                Calcular Diametro del circulo
+            </button>
+            
+        </form>
+    </section>
+</section> 
+    <script src="./Figuras.js"></script>
+</body>
+</html>
